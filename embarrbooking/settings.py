@@ -15,7 +15,7 @@ import os
 import dj_database_url
 
 if os.path.isfile("env.py"):
-   import env
+    import env
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -81,10 +81,7 @@ WSGI_APPLICATION = 'embarrbooking.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+   'default': dj_database_url.parse(os.environ.get("postgres://esrqoorumyybqj:4e0ea791d1641bc6846f50ea85f1be50bc0f0ca9d25c21dcba0e7ced8373d79e@ec2-3-248-121-12.eu-west-1.compute.amazonaws.com:5432/d7jk5kttccj1ki"))
 }
 
 

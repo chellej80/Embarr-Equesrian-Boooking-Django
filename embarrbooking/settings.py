@@ -32,7 +32,7 @@ SECRET_KEY = 'Akehcmbf2022##EmbarrEq!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["embarr-equestrian-booking.herokuapp.com","localhost" ]
 
 
 # Application definition
